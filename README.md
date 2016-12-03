@@ -2,7 +2,7 @@
 Basic project template for LaTeX created by Stephen Molyneaux.
 
 ## Using this Template for a New Project on Linux
-- Create an empty repository on github
+- [Create an empty repository on github](https://github.com/new)
 - Enter following commands in a shell to get the latest version of this template
 ```bash
 wget https://github.com/WimbledonLabs/tex-template/archive/master.zip -O tex-template.zip
