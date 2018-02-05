@@ -16,7 +16,7 @@ git clone https://github.com/$USERNAME/$PROJECT.git .
 wget https://github.com/WimbledonLabs/tex-template/archive/master.zip
 unzip master.zip
 
-mv -n tex-template-master/* .
+mv -n tex-template-master/.[!.]* .
 rm master.zip
 rm tex-template-master/ -r
 
