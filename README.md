@@ -2,28 +2,28 @@
 Basic project template for LaTeX created by Stephen Molyneaux.
 
 ## Using this Template for a New Project on Linux
-- [Create an empty repository on github](https://github.com/new)
+- [Create a repository on github](https://github.com/new)
+- Set the following variables in your shell
+```bash
+export USERNAME=WimbledonLabs # Replace with YOUR github username
+export PROJECT=name-of-repo # Replace the name of the repository you just created
+```
+- Navigate to your desired project directory (must be empty)
 - Enter following commands in a shell to get the latest version of this template
 ```bash
-wget https://github.com/WimbledonLabs/tex-template/archive/master.zip -O tex-template.zip
-unzip tex-template.zip
-rm tex-template.zip
-```
-The template code should be in the directory `tex-template-master`
+git clone https://github.com/$USERNAME/$PROJECT.git .
 
-- Copy the contents of this directory to your project folder
-```bash
-cp -r tex-template-master/* PATH_TO_PROJECT
-```
+wget https://github.com/WimbledonLabs/tex-template/archive/master.zip
+unzip master.zip
 
-- Navigate to your project directory, and initialize git for your project
-```bash
-cd PATH_TO_PROJECT
-git init
+mv -n tex-template-master/.[!.]* .
+mv -n tex-template-master/* .
+rm master.zip
+rm tex-template-master/ -r
+
 git add --all
-git commit -m "first commit"
-git remote add origin https://github.com/YOUR_USERNAME/YOUR_PROJECT_NAME.git
-git push -u origin master
+git commit -m "Imported WimbledonLabs/tex-template"
+git push
 ```
 
 # Using the Template
